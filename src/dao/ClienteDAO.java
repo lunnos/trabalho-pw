@@ -12,7 +12,8 @@ public class ClienteDAO {
 	private EntityManager em;
 
 	public ClienteDAO() {
-	}
+   // O construtor vazio é util para inicializar objetos sem passar parâmetros
+ }
 
 	public boolean salvar(Cliente entity) {
 		try {
