@@ -65,8 +65,7 @@ public class FreteDAO {
 			em = JPAUtil.getEntityManager();
 			TypedQuery<Frete> query = em.createQuery(
 					"SELECT obj FROM Frete obj", Frete.class);
-			List<Frete> fretes = query.getResultList();
-			return fretes;
+			return query.getResultList();
 		} catch (RuntimeException e) {
 			return null;
 		}
